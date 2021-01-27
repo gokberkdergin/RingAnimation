@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RingAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="etZ-dL-Zav">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="o71-IC-WCi"/>
+                                    <constraint firstAttribute="width" constant="414" id="tjg-2W-7bb"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofM-Mr-Bky">
+                                <rect key="frame" x="144.5" y="386" width="125" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="Epo-R4-1l8"/>
+                                    <constraint firstAttribute="width" constant="125" id="IfI-hu-TEE"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="titleShadowOffset" width="1" height="0.0"/>
+                                <state key="normal" backgroundImage="chevron.up.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wVC-ox-A6A"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="ofM-Mr-Bky" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="T4j-8l-plc"/>
+                            <constraint firstItem="etZ-dL-Zav" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-273" id="WKi-Ss-By1"/>
+                            <constraint firstItem="ofM-Mr-Bky" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ddh-jz-vFG"/>
+                            <constraint firstItem="etZ-dL-Zav" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kPX-ez-DTn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="view2" destination="etZ-dL-Zav" id="7Am-a8-88U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-459.4202898550725" y="63.616071428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.up.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
